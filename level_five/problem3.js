@@ -13,6 +13,16 @@ function easyProblem1(inviteType, age) {
     // TODO: Write your code here
     // If inviteType is "Designer" AND age is 18, return "can access"
     // Otherwise return "go home"
+    
+function easyProblem1(inviteType, age) {
+   
+    if (inviteType === "Designer" && age === 18) {
+        return "can access";
+    }
+   
+    return "go home";
+}
+
 }
 
 // Test your code:
@@ -28,6 +38,17 @@ function easyProblem2(inviteType, age) {
     // TODO: Write your code here
     // If age is 18 AND inviteType is NOT "Designer", return "can sign in"
     // Otherwise return "go home"
+    function easyProblem2(inviteType, age) {
+    
+    if (age === 18 && inviteType !== "Designer") {
+        return "can sign in";
+    }
+ 
+    else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -46,6 +67,21 @@ function mediumProblem(inviteType, age) {
     // 1. First check: inviteType === "Designer" && age === 18 → "can access"
     // 2. Second check: age === 18 && inviteType !== "Designer" → "can sign in"
     // 3. Everything else → "go home"
+    function mediumProblem(inviteType, age) {
+    
+    if (inviteType === "Designer" && age === 18) {
+        return "can access";
+    }
+    
+    else if (age === 18 && inviteType !== "Designer") {
+        return "can sign in";
+    }
+   
+    else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -71,6 +107,18 @@ function hardProblem(inviteType, age) {
     // } else {
     //     return "go home"
     // }
+    function hardProblem(inviteType, age) {
+    if (age === 18) {                 
+        if (inviteType === "Designer") { 
+            return "can access";      
+        } else {
+            return "can sign in";     
+        }
+    } else {
+        return "go home";             
+    }
+}
+
 }
 
 // Test your code:

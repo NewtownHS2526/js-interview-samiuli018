@@ -13,6 +13,14 @@ function easyProblem1(memberStatus, age) {
     // TODO: Write your code here
     // If memberStatus is "VIP" AND age is 18, return "can access"
     // Otherwise return "go home"
+    function easyProblem1(memberStatus, age) {
+    if (memberStatus === "VIP" && age === 18) {
+        return "can access";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -28,6 +36,14 @@ function easyProblem2(memberStatus, age) {
     // TODO: Write your code here
     // If age is 18 AND memberStatus is NOT "VIP", return "can sign in"
     // Otherwise return "go home"
+   function easyProblem2(memberStatus, age) {
+    if (age === 18 && memberStatus !== "VIP") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+ 
 }
 
 // Test your code:
@@ -46,6 +62,16 @@ function mediumProblem(memberStatus, age) {
     // 1. First check: memberStatus === "VIP" && age === 18 → "can access"
     // 2. Second check: age === 18 && memberStatus !== "VIP" → "can sign in"
     // 3. Everything else → "go home"
+   function mediumProblem(memberStatus, age) {
+    if (memberStatus === "VIP" && age === 18) {
+        return "can access";
+    } else if (age === 18 && memberStatus !== "VIP") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+ 
 }
 
 // Test your code:
@@ -71,6 +97,18 @@ function hardProblem(memberStatus, age) {
     // } else {
     //     return "go home"
     // }
+    function hardProblem(memberStatus, age) {
+    if (age === 18) {                          
+        if (memberStatus === "VIP") {          
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {                                   
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:

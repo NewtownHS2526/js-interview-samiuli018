@@ -13,6 +13,16 @@ function easyProblem1(bidderStatus, age) {
     // TODO: Write your code here
     // If bidderStatus is "VIP" AND age is 21, return "can access"
     // Otherwise return "go home"
+    function easyProblem1(bidderStatus, age) {
+    
+    if (bidderStatus === "VIP" && age === 21) {
+        return "can access";
+    }
+
+    
+    return "go home";
+}
+
 }
 
 // Test your code:
@@ -29,6 +39,16 @@ function easyProblem2(bidderStatus, age) {
     // TODO: Write your code here
     // If age is 21 AND bidderStatus is NOT "VIP", return "can sign in"
     // Otherwise return "go home"
+    function easyProblem2(bidderStatus, age) {
+    
+    if (age === 21 && bidderStatus !== "VIP") {
+        return "can sign in";
+    }
+
+    // Otherwise
+    return "go home";
+}
+
 }
 
 // Test your code:
@@ -54,6 +74,24 @@ function mediumProblem(bidderStatus, age) {
     // }
     //
     // Remember: Check bidderStatus === "VIP" && age === 21 first!
+    function mediumProblem(bidderStatus, age) {
+    
+        
+    if (bidderStatus === "VIP" && age === 21) {
+        return "can access";
+    }
+    
+    
+    else if (age === 21 && bidderStatus !== "VIP") {
+        return "can sign in";
+    }
+    
+    
+    else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -81,6 +119,24 @@ function hardProblem(bidderStatus, age) {
     //     - Return "go home"
     //
     // Why is this structure better? Think about it!
+    function hardProblem(bidderStatus, age) {
+    // First, check if age is 21
+    if (age === 21) {
+        
+        
+        if (bidderStatus === "VIP") {
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } 
+    
+    
+    else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:

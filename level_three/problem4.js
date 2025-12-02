@@ -13,6 +13,14 @@ function easyProblem1(memberLevel, age) {
     // TODO: Write your code here
     // Check if memberLevel is "Elite" AND age is 16
     // Return "can access" if both are true, otherwise "go home"
+    function easyProblem1(memberLevel, age) {
+    if (memberLevel === "Elite" && age === 16) {
+        return "can access";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -29,6 +37,14 @@ function easyProblem2(memberLevel, age) {
     // TODO: Write your code here
     // Check if age is 16 AND memberLevel is NOT "Elite"
     // Return "can sign in" if true, otherwise "go home"
+    function easyProblem2(memberLevel, age) {
+    if (age === 16 && memberLevel !== "Elite") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -47,6 +63,16 @@ function mediumProblem(memberLevel, age) {
     // 1. memberLevel === "Elite" && age === 16 → "can access"
     // 2. age === 16 && memberLevel !== "Elite" → "can sign in"
     // 3. All other cases → "go home"
+    function mediumProblem(memberLevel, age) {
+    if (memberLevel === "Elite" && age === 16) {
+        return "can access";
+    } else if (age === 16 && memberLevel !== "Elite") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -76,6 +102,18 @@ function hardProblem(memberLevel, age) {
     // }
     //
     // Think: Why do we check age first? What happens if age is not 16?
+    function hardProblem(memberLevel, age) {
+    if (age === 16) {                        
+        if (memberLevel === "Elite") {       
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {                                 
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:

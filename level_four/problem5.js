@@ -13,6 +13,14 @@ function easyProblem1(servicePackage, age) {
     // TODO: Write your code here
     // If servicePackage is "Royal" AND age is 21, return "can access"
     // Otherwise return "go home"
+    function easyProblem1(servicePackage, age) {
+    if (servicePackage === "Royal" && age === 21) {
+        return "can access";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -29,6 +37,14 @@ function easyProblem2(servicePackage, age) {
     // TODO: Write your code here
     // If age is 21 AND servicePackage is NOT "Royal", return "can sign in"
     // Otherwise return "go home"
+    function easyProblem2(servicePackage, age) {
+    if (age === 21 && servicePackage !== "Royal") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -54,6 +70,16 @@ function mediumProblem(servicePackage, age) {
     // }
     //
     // Remember: Check servicePackage === "Royal" && age === 21 first!
+    function mediumProblem(servicePackage, age) {
+    if (servicePackage === "Royal" && age === 21) {
+        return "can access";
+    } else if (age === 21 && servicePackage !== "Royal") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -81,6 +107,18 @@ function hardProblem(servicePackage, age) {
     //     - Return "go home"
     //
     // Why is this structure better? Think about it!
+    function hardProblem(servicePackage, age) {
+    if (age === 21) {
+        if (servicePackage === "Royal") {
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:

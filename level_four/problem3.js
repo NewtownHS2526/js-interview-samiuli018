@@ -13,6 +13,14 @@ function easyProblem1(memberTier, age) {
     // TODO: Write your code here
     // If memberTier is "Executive" AND age is 18, return "can access"
     // Otherwise return "go home"
+    function easyProblem1(memberTier, age) {
+    if (memberTier === "Executive" && age === 18) {
+        return "can access";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -28,6 +36,14 @@ function easyProblem2(memberTier, age) {
     // TODO: Write your code here
     // If age is 18 AND memberTier is NOT "Executive", return "can sign in"
     // Otherwise return "go home"
+    function easyProblem2(memberTier, age) {
+    if (age === 18 && memberTier !== "Executive") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -46,6 +62,16 @@ function mediumProblem(memberTier, age) {
     // 1. First check: memberTier === "Executive" && age === 18 → "can access"
     // 2. Second check: age === 18 && memberTier !== "Executive" → "can sign in"
     // 3. Everything else → "go home"
+    function mediumProblem(memberTier, age) {
+    if (memberTier === "Executive" && age === 18) {
+        return "can access";
+    } else if (age === 18 && memberTier !== "Executive") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -71,6 +97,18 @@ function hardProblem(memberTier, age) {
     // } else {
     //     return "go home"
     // }
+    function hardProblem(memberTier, age) {
+    if (age === 18) {
+        if (memberTier === "Executive") {
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:

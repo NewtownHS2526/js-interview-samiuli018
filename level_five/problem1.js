@@ -13,11 +13,20 @@ function easyProblem1(guestStatus, age) {
     // TODO: Write your code here
     // If guestStatus is "Connoisseur" AND age is 21, return "can access"
     // Otherwise, return "go home"
+    function easyProblem1(guestStatus, age) {
+        if (guestStatus === "Connoisseur" && age === 21) {
+    return "can access";
+  } 
+  else {
+    return "go home";
+  }
+}
 }
 
 // Test your code:
 console.log("Easy 1 - Test 1:", easyProblem1("Connoisseur", 21)); // Should print: "can access"
 console.log("Easy 1 - Test 2:", easyProblem1("Connoisseur", 20)); // Should print: "go home"
+console.log("Easy 1 - Test 3:", easyProblem1("Member", 21));      // Should print: "go home"
 
 // ============================================
 // EASY PROBLEM 2: Simple if-else statement
@@ -28,6 +37,16 @@ function easyProblem2(guestStatus, age) {
     // TODO: Write your code here
     // If age is 21 AND guestStatus is NOT "Connoisseur", return "can sign in"
     // Otherwise, return "go home"
+function easyProblem2(guestStatus, age) {
+    if (age === 21 && guestStatus !== "Connoisseur") {
+        return "can sign in";
+    } 
+    
+    else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -45,6 +64,15 @@ function mediumProblem(guestStatus, age) {
     // 1. guestStatus === "Connoisseur" && age === 21 → "can access"
     // 2. age === 21 && guestStatus !== "Connoisseur" → "can sign in"
     // 3. Everything else → "go home"
+    function mediumProblem(guestStatus, age) {
+    if (guestStatus === "Connoisseur" && age === 21) {
+        return "can access";
+    } else if (age === 21 && guestStatus !== "Connoisseur") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
 }
 
 // Test your code:
@@ -65,6 +93,20 @@ function hardProblem(guestStatus, age) {
     //     - If guestStatus is NOT "Connoisseur" → return "can sign in"
     //   - If age is NOT 21 → return "go home"
     // Use nested if statements!
+   function hardProblem(guestStatus, age) {
+    // Step 1: Check if age is 21
+    if (age === 21) {
+        // Step 2: If age is 21, check guestStatus
+        if (guestStatus === "Connoisseur") {
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {
+        // Step 3: If age is not 21, return "go home"
+        return "go home";
+    }
+} 
 }
 
 // Test your code:

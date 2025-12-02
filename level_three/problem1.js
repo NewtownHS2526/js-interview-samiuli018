@@ -13,7 +13,15 @@ function easyProblem1(courseTier, studentAge) {
     // TODO: Write your code here
     // If courseTier is "Master" AND studentAge is 18, return "can access"
     // Otherwise, return "go home"
+
+}function easyProblem1(courseTier, studentAge) {
+    if (courseTier === "Master" && studentAge === 18) {
+        return "can access";
+    } else {
+        return "go home";
+    }
 }
+
 
 // Test your code:
 console.log("Easy 1 - Test 1:", easyProblem1("Master", 18)); // Should print: "can access"
@@ -28,6 +36,14 @@ function easyProblem2(courseTier, studentAge) {
     // TODO: Write your code here
     // If studentAge is 18 AND courseTier is NOT "Master", return "can sign in"
     // Otherwise, return "go home"
+    function easyProblem2(courseTier, studentAge) {
+    if (studentAge === 18 && courseTier !== "Master") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -45,6 +61,16 @@ function mediumProblem(courseTier, studentAge) {
     // 1. courseTier === "Master" && studentAge === 18 → "can access"
     // 2. studentAge === 18 && courseTier !== "Master" → "can sign in"
     // 3. Everything else → "go home"
+    function mediumProblem(courseTier, studentAge) {
+    if (courseTier === "Master" && studentAge === 18) {
+        return "can access";
+    } else if (studentAge === 18 && courseTier !== "Master") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -65,6 +91,18 @@ function hardProblem(courseTier, studentAge) {
     //     - If courseTier is NOT "Master" → return "can sign in"
     //   - If studentAge is NOT 18 → return "go home"
     // Use nested if statements!
+   function hardProblem(courseTier, studentAge) {
+    if (studentAge === 18) {
+        if (courseTier === "Master") {
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {
+        return "go home";
+    }
+}
+ 
 }
 
 // Test your code:

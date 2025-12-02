@@ -13,6 +13,14 @@ function easyProblem1(subscriptionPlan, age) {
     // TODO: Write your code here
     // Use === to check if subscriptionPlan equals "Ultimate" AND age equals 21
     // Return "can access" if true, otherwise "go home"
+    function easyProblem1(subscriptionPlan, age) {
+    if (subscriptionPlan === "Ultimate" && age === 21) {
+        return "can access";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -28,6 +36,14 @@ function easyProblem2(subscriptionPlan, age) {
     // TODO: Write your code here
     // Check if age is 21 AND subscriptionPlan is NOT "Ultimate"
     // Return "can sign in" if true, otherwise "go home"
+    function easyProblem2(subscriptionPlan, age) {
+    if (age === 21 && subscriptionPlan !== "Ultimate") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -44,6 +60,16 @@ function mediumProblem(subscriptionPlan, age) {
     // Use if-else if-else with && operator
     // Make sure to check all three conditions correctly
     // Remember: && means BOTH conditions must be true
+    function mediumProblem(subscriptionPlan, age) {
+    if (subscriptionPlan === "Ultimate" && age === 21) {
+        return "can access";
+    } else if (age === 21 && subscriptionPlan !== "Ultimate") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -66,7 +92,19 @@ function hardProblem(subscriptionPlan, age) {
     //   - If age is NOT 21:
     //     - Return "go home"
     // Use nested if-else statements!
+
+}function hardProblem(subscriptionPlan, age) {
+    if (age === 21) {                          
+        if (subscriptionPlan === "Ultimate") { 
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {                                   
+        return "go home";
+    }
 }
+
 
 // Test your code:
 console.log("Hard - Test 1:", hardProblem("Ultimate", 21)); // Should print: "can access"

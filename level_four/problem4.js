@@ -13,6 +13,13 @@ function easyProblem1(attendeeType, age) {
     // TODO: Write your code here
     // Check if attendeeType is "Speaker" AND age is 21
     // Return "can access" if both are true, otherwise "go home"
+    function easyProblem1(attendeeType, age) {
+    if (attendeeType === "Speaker" && age === 21) {
+        return "can access";
+    } else {
+        return "go home";
+    }
+}
 }
 
 // Test your code:
@@ -29,6 +36,14 @@ function easyProblem2(attendeeType, age) {
     // TODO: Write your code here
     // Check if age is 21 AND attendeeType is NOT "Speaker"
     // Return "can sign in" if true, otherwise "go home"
+    function easyProblem2(attendeeType, age) {
+    if (age === 21 && attendeeType !== "Speaker") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -47,6 +62,16 @@ function mediumProblem(attendeeType, age) {
     // 1. attendeeType === "Speaker" && age === 21 → "can access"
     // 2. age === 21 && attendeeType !== "Speaker" → "can sign in"
     // 3. All other cases → "go home"
+    function mediumProblem(attendeeType, age) {
+    if (attendeeType === "Speaker" && age === 21) {
+        return "can access";
+    } else if (age === 21 && attendeeType !== "Speaker") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -76,6 +101,18 @@ function hardProblem(attendeeType, age) {
     // }
     //
     // Think: Why do we check age first? What happens if age is not 21?
+    function hardProblem(attendeeType, age) {
+    if (age === 21) {
+        if (attendeeType === "Speaker") {
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:

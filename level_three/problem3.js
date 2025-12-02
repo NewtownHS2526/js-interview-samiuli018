@@ -13,6 +13,14 @@ function easyProblem1(roomType, guestAge) {
     // TODO: Write your code here
     // If roomType is "Presidential" AND guestAge is 21, return "can access"
     // Otherwise return "go home"
+    function easyProblem1(roomType, guestAge) {
+    if (roomType === "Presidential" && guestAge === 21) {
+        return "can access";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -28,6 +36,14 @@ function easyProblem2(roomType, guestAge) {
     // TODO: Write your code here
     // If guestAge is 21 AND roomType is NOT "Presidential", return "can sign in"
     // Otherwise return "go home"
+    function easyProblem2(roomType, guestAge) {
+    if (guestAge === 21 && roomType !== "Presidential") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -46,6 +62,16 @@ function mediumProblem(roomType, guestAge) {
     // 1. First check: roomType === "Presidential" && guestAge === 21 → "can access"
     // 2. Second check: guestAge === 21 && roomType !== "Presidential" → "can sign in"
     // 3. Everything else → "go home"
+    function mediumProblem(roomType, guestAge) {
+    if (roomType === "Presidential" && guestAge === 21) {
+        return "can access";
+    } else if (guestAge === 21 && roomType !== "Presidential") {
+        return "can sign in";
+    } else {
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
@@ -71,6 +97,18 @@ function hardProblem(roomType, guestAge) {
     // } else {
     //     return "go home"
     // }
+    function hardProblem(roomType, guestAge) {
+    if (guestAge === 21) {                  
+        if (roomType === "Presidential") {  
+            return "can access";
+        } else {
+            return "can sign in";
+        }
+    } else {                                
+        return "go home";
+    }
+}
+
 }
 
 // Test your code:
